@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projet Jeu du neutron</title>
+        <link rel="stylesheet" href="neutron_styles.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Projet Jeu du neutron</h1>
+                <p><a href="site.fr.html">Retour au CV</a></p>
+            </header>
+            <section id="project-details">
+                <h2>Détails du Projet</h2>
+                <div class="content">
+                    <p>
+                        Développement d'un programme pour le jeu du neutron.
+                        Création d'une plateforme interactive. Application des
+                        concepts de modélisation de jeux en C.
+                    </p>
+                </div>
+            </section>
+            <section id="instructions">
+                <h2>Instructions du Jeu</h2>
+                <div class="content">
+                    <p>
+                        Le jeu du neutron est un jeu de stratégie pour deux
+                        joueurs. L'objectif est de déplacer le neutron (N) vers
+                        la première ou la dernière rangée du plateau, ou de
+                        bloquer l'adversaire pour qu'il ne puisse plus effectuer
+                        de déplacement. Les pions rouges (R) sont contrôlés par
+                        un joueur et les pions bleus (B) par l'autre joueur. Le
+                        neutron peut être déplacé par les deux joueurs pendant
+                        leur tour.
+                    </p>
+                    <h3>Comment jouer :</h3>
+                    <ul>
+                        <li>
+                            Chaque joueur à son tour sélectionne un de ses pions
+                            ou le neutron en cliquant dessus.
+                        </li>
+                        <li>
+                            Une fois sélectionné, le joueur choisit une
+                            direction (de 1 à 8) pour déplacer le pion.
+                        </li>
+                        <li>
+                            Le pion se déplace dans la direction choisie jusqu'à
+                            ce qu'il rencontre un obstacle ou le bord du
+                            plateau.
+                        </li>
+                        <li>
+                            Le jeu continue jusqu'à ce qu'un joueur atteigne la
+                            première ou la dernière rangée avec le neutron ou
+                            bloque l'adversaire.
+                        </li>
+                    </ul>
+                    <h3>Exemple de déplacement :</h3>
+                    <p>
+                        Supposons que vous contrôlez les pions bleus (B) et que
+                        c'est votre tour de jouer. Vous cliquez sur un de vos
+                        pions bleus, par exemple, celui en position (5, 1).
+                        Ensuite, une boîte de dialogue s'ouvre pour vous
+                        demander de choisir une direction. Les directions sont
+                        numérotées de 1 à 8 comme suit :
+                    </p>
+                    <ul>
+                        <li>
+                            1 : Bas (↓) - [1, 0] en matrice (ajoute 1 à la
+                            ligne)
+                        </li>
+                        <li>
+                            2 : Haut (↑) - [-1, 0] en matrice (soustrait 1 à la
+                            ligne)
+                        </li>
+                        <li>
+                            3 : Droite (→) - [0, 1] en matrice (ajoute 1 à la
+                            colonne)
+                        </li>
+                        <li>
+                            4 : Gauche (←) - [0, -1] en matrice (soustrait 1 à
+                            la colonne)
+                        </li>
+                        <li>
+                            5 : Bas-Droite (↘) - [1, 1] en matrice (ajoute 1 à
+                            la ligne et à la colonne)
+                        </li>
+                        <li>
+                            6 : Haut-Droite (↗) - [-1, 1] en matrice (soustrait
+                            1 à la ligne et ajoute 1 à la colonne)
+                        </li>
+                        <li>
+                            7 : Haut-Gauche (↖) - [-1, -1] en matrice
+                            (soustrait 1 à la ligne et à la colonne)
+                        </li>
+                        <li>
+                            8 : Bas-Gauche (↙) - [1, -1] en matrice (ajoute 1 à
+                            la ligne et soustrait 1 à la colonne)
+                        </li>
+                    </ul>
+                    <p>
+                        Si vous choisissez la direction 3 (Droite), le pion se
+                        déplacera vers la droite jusqu'à ce qu'il rencontre un
+                        obstacle ou le bord du plateau. Par exemple, s'il n'y a
+                        pas d'obstacle, le pion en (5, 1) se déplacera vers (5,
+                        5).
+                    </p>
+                </div>
+            </section>
+            <section id="game">
+                <h2>Interagir avec le programme</h2>
+                <div id="board" class="board"></div>
+                <div class="button-container">
+                    <button id="restart-game">Redémarrer le jeu</button>
+                </div>
+                <pre id="output"></pre>
+            </section>
+        </div>
+        <script src="jeu_de_neutron.js"></script>
+    </body>
+</html>
