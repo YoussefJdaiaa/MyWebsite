@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Site Web - Association Sportive</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Projet Site Web - Association Sportive</h1>
+            <p><a href="../../pages/fr/site.fr.html">Retour au CV</a></p>
+        </header>
+
+        <section id="project-overview">
+            <h2>Vue d'ensemble du Projet</h2>
+            <div class="content">
+                <p>Développement complet d'une plateforme web pour la gestion d'une association sportive. Le projet
+                    comprend la conception d'une base de données relationnelle robuste et le développement d'une
+                    interface web intuitive permettant la gestion complète des membres, des activités et des événements
+                    de l'association.</p>
+            </div>
+        </section>
+
+        <section id="project-details">
+            <h2>Détails Techniques</h2>
+            <div class="content">
+                <h3>Technologies utilisées :</h3>
+                <ul>
+                    <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend :</strong> PHP 7.4+</li>
+                    <li><strong>Base de données :</strong> MySQL / MariaDB</li>
+                    <li><strong>Serveur web :</strong> Apache</li>
+                    <li><strong>Outils :</strong> phpMyAdmin pour la gestion de la base de données</li>
+                </ul>
+
+                <h3>Architecture de la base de données :</h3>
+                <ul>
+                    <li><strong>Table Membres :</strong> Informations personnelles, coordonnées, statut d'adhésion</li>
+                    <li><strong>Table Activités :</strong> Différents sports et activités proposés</li>
+                    <li><strong>Table Inscriptions :</strong> Liaison entre membres et activités</li>
+                    <li><strong>Table Événements :</strong> Compétitions, tournois, réunions</li>
+                    <li><strong>Table Paiements :</strong> Suivi des cotisations et frais d'inscription</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section id="database-schema">
+            <h2>Schéma de Base de Données</h2>
+            <div class="content">
+                <h3>Principales Relations :</h3>
+                <ul>
+                    <li><strong>Membres (1,N) ↔ (N,1) Inscriptions :</strong> Un membre peut s'inscrire à plusieurs
+                        activités</li>
+                    <li><strong>Activités (1,N) ↔ (N,1) Inscriptions :</strong> Une activité peut avoir plusieurs
+                        membres inscrits</li>
+                    <li><strong>Membres (1,N) ↔ (N,1) Paiements :</strong> Suivi des transactions financières</li>
+                    <li><strong>Événements (1,N) ↔ (N,1) Participations :</strong> Gestion des inscriptions aux
+                        événements</li>
+                </ul>
+
+                <h3>Contraintes d'Intégrité :</h3>
+                <ul>
+                    <li>Clés primaires auto-incrémentées</li>
+                    <li>Clés étrangères avec contraintes référentielles</li>
+                    <li>Validation des formats (email, téléphone, dates)</li>
+                    <li>Index optimisés pour les recherches fréquentes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="implementation">
+            <h2>Implémentation</h2>
+            <div class="content">
+                <h3>Structure du Projet :</h3>
+                <ul>
+                    <li><strong>/config/</strong> - Configuration de la base de données et paramètres</li>
+                    <li><strong>/includes/</strong> - Fichiers PHP réutilisables (header, footer, fonctions)</li>
+                    <li><strong>/admin/</strong> - Interface d'administration</li>
+                    <li><strong>/members/</strong> - Espace membre</li>
+                    <li><strong>/assets/</strong> - CSS, JavaScript, images</li>
+                    <li><strong>/sql/</strong> - Scripts de création et peuplement de la base</li>
+                </ul>
+
+                <h3>Fonctionnalités Avancées :</h3>
+                <ul>
+                    <li>Système de recherche et filtrage avancé</li>
+                    <li>Export des données en PDF et Excel</li>
+                    <li>Interface responsive adaptée mobile/tablette</li>
+                    <li>Système de backup automatique des données</li>
+                    <li>Logs d'activité pour audit et sécurité</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+        <section id="live-demo">
+            <h2>Démonstration en direct</h2>
+            <div class="content">
+                <p>Vous pouvez voir le site web de l'association sportive en action :</p>
+                <p><a href="index.html" target="_blank" class="project-link">🌐 Voir le site web en direct</a></p>
+            </div>
+        </section>
+    </div>
+    <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>

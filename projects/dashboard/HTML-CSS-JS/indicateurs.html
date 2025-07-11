@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pertinence des Indicateurs - Tableau de Bord DDRS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="smooth-scroll">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="main_dash.html"><img src="data/logo.png" alt="Logo" class="header-logo"> Tableau de
+            Bord DDRS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main_dash.html">Tableau de Bord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Analyse.html">Analyse des Données</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Pertinence des Indicateurs</h1>
+        <p class="text-center mb-5">Ce tableau de bord a été conçu pour fournir une vue d'ensemble des véhicules
+            électriques dans l'état de Washington.</p>
+
+        <div class="card p-4">
+            <h2 class="card-title">Répartition des véhicules</h2>
+            <p>Indicateur choisi: "comptés"</p>
+            <p>Comprendre la proportion de véhicules électriques dans chaque compté de l'état de Washington est crucial
+                pour identifier les zones de forte adoption et cibler les efforts de développement des infrastructures
+                de recharge. Une carte est utilisé ici pour montrer la distribution entre les différents comptés. Nous
+                pouvons donc facilement localiser quelles comptés de washington est le plus interressé par les voitures
+                électriques (attention cependant car cette information depend aussi du nombre d'habitant, information
+                que nous n'avions pas dans les données) </p>
+        </div>
+
+        <div class="card p-4">
+            <h2 class="card-title">Répartition du nombre de véhicules par année de modèle</h2>
+            <p>Indicateur choisi: "année des véhicules"</p>
+            <p>L'analyse des modèles par année permet de suivre l'évolution des véhicules électriques sur le marché au
+                fil du temps. Cela aide à comprendre les tendances de popularité des véhicules électriques et à prévoir
+                les besoins futurs en termes de production et de services. Cet indicateur est important pour anticiper
+                les évolutions du marché. Un histogramme est choisi pour représenter les données temporelles,
+                mettant en évidence les variations annuelles.</p>
+        </div>
+
+        <div class="card p-4">
+            <h2 class="card-title">Fournisseurs d'accessoires électroniques</h2>
+            <p>Indicateur choisi: "fournisseur"</p>
+            <p>Identifier les principaux fabricants de véhicules électriques et leurs parts de marché aide à comprendre
+                quels acteurs dominent le marché. Cet indicateur est également essentiel pour évaluer la concurrence et
+                les tendances du marché. Un graphique en camembert est utilisé pour illustrer la répartition des parts
+                de marché de manière visuelle et intuitive. Comme c'est une compétition entre les fournisseurs, ce
+                diagramme permet de voir qui dispose de la "part de gateau" la plus importante du marché</p>
+        </div>
+
+        <div class="card p-4">
+            <h2 class="card-title">Autonomie moyenne</h2>
+            <p>Indicateur choisi: "Electric Range"</p>
+            <p>L'autonomie moyenne des véhicules par fabricant donne une idée des avancées technologiques et des
+                capacités de ces véhicules. C'est un bon indicateur pour les personnes qui cherchent des options fiables
+                et pour les fabricants visant à améliorer leurs produits. Un graphique en jauge est utilisé pour montrer
+                les capacités moyennes d'un véhicule électrique. Nous avons trouvé que ce diagramme et pertinant car il
+                ressemble a un compteur de vitesse dans
+                une voiture, et peux donc evoluer si les données evolue comme un compteur de vitesse </p>
+        </div>
+
+        <div class="card p-4">
+            <h2 class="card-title">Part de véhicules hybrides / Non hybrides</h2>
+            <p>Indicateur choisi: "Vehicule Type"</p>
+            <p>La proportion de véhicules hybrides par rapport aux véhicules entièrement électriques peut indiquer la
+                préférence des clients. Cette information est utile pour orienter les stratégies de marketing et de
+                développement produit des fabricants. Un histogramme horizontale simple est choisi pour comparer la
+                proportion des
+                deux catégories de véhicules. Ici comme il n'y a que 2 valeurs a comparer nous avons pensés que c'était
+                le graphique le plus pertinent a utiliser</p>
+        </div>
+
+        <div class="card p-4">
+            <h2 class="card-title">% de part de marchés des marques</h2>
+            <p>Indicateur choisi: "Mark"</p>
+            <p>La répartition du marché entre différentes marques montre la compétition sur le marché des véhicules
+                électriques. Cet indicateur est essentiel pour comprendre la dynamique du marché et les positions
+                relatives des différents acteurs. Il aide à identifier les leaders du marché. Un histogramme
+                permet de comparer efficacement les parts de marchés des différentes marques ,et permet de rapidement se
+                rendre compte qui domine le marché (car ce sont eux qui sont mis en évidences ). Nous n'avons pas pris
+                un diagrame en camembert car nous avions trop de marques, et nous ne voulions pas en enlever car elles
+                sont toutes assez connu, et un utilisateur pourrait être tenté de savoir si sa marque preferé est bien
+                présente sur le marché ou non</p>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="main_dash.html" class="btn btn-custom">Retour au Tableau de Bord</a>
+        </div>
+    </div>
+    <foorter class="footer">
+        <p>Ilhiane Zarouri et Youssef Jdaiaa</p>
+    </foorter>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="readfile.js"></script>
+    <script src="tableau_de_bord.js"></script>
+</body>
+
+</html>

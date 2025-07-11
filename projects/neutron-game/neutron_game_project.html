@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutron Game Project</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Neutron Game Project</h1>
+            <p><a href="../../pages/en/site.eng.html">Back to CV</a></p>
+        </header>
+        <section id="project-details">
+            <h2>Project Details</h2>
+            <div class="content">
+                <p>Development of a program for the neutron game. Creation of an interactive platform. Application of game modeling concepts in C.</p>
+            </div>
+        </section>
+        <section id="instructions">
+            <h2>Game Instructions</h2>
+            <div class="content">
+                <p>The neutron game is a strategy game for two players. The goal is to move the neutron (N) to the first or last row of the board, or to block the opponent so they can no longer make a move. The red pieces (R) are controlled by one player and the blue pieces (B) by the other player. The neutron can be moved by both players during their turn.</p>
+                <h3>How to play:</h3>
+                <ul>
+                    <li>Each player takes turns selecting one of their pieces or the neutron by clicking on it.</li>
+                    <li>Once selected, the player chooses a direction (from 1 to 8) to move the piece.</li>
+                    <li>The piece moves in the chosen direction until it encounters an obstacle or the edge of the board.</li>
+                    <li>The game continues until a player reaches the first or last row with the neutron or blocks the opponent.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="game">
+            <h2>Interact with the Program</h2>
+            <div id="board" class="board"></div>
+            <div class="button-container">
+                <button id="restart-game">Restart Game</button>
+            </div>
+            <pre id="output"></pre>
+        </section>
+    </div>
+    <script src="../../assets/js/jeu_de_neutron.js"></script>
+</body>
+</html>

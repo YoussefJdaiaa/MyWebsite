@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Jdaiaa - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/generated-icon.png" type="image/png">
+    <meta name="description" content="Portfolio de Youssef Jdaiaa - Développeur créatif spécialisé en Data Science et développement web">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Language Selection Section -->
+        <section class="hero language-selector">
+            <h1>Youssef Jdaiaa</h1>
+            <p class="subtitle">Portfolio - Choisissez votre langue / Choose your language</p>
+
+            <div class="language-buttons">
+                <a href="pages/fr/site.fr.html" class="language-btn french">
+                    <span class="flag">🇫🇷</span>
+                    <span class="text">Français</span>
+                </a>
+
+                <a href="pages/en/site.eng.html" class="language-btn english">
+                    <span class="flag">🇬🇧</span>
+                    <span class="text">English</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        .language-selector {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .language-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .language-btn:hover {
+            background: var(--primary-color);
+            color: #121212;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .language-btn .flag {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .language-btn .text {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .language-buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .language-btn {
+                padding: 25px 35px;
+            }
+
+            .language-btn .flag {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</body>
+
+</html>

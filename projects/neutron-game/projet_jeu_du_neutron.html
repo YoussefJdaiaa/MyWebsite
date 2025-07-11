@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Jeu du neutron</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Projet Jeu du neutron</h1>
+            <p><a href="../../pages/fr/site.fr.html">Retour au CV</a></p>
+        </header>
+        <section id="project-details">
+            <h2>Détails du Projet</h2>
+            <div class="content">
+                <p>Développement d'un programme pour le jeu du neutron. Création d'une plateforme interactive dans le terminal. Application des concepts de modélisation de jeux en C.</p>
+            </div>
+        </section>
+        <section id="instructions">
+            <h2>Instructions du jeu</h2>
+            <div class="content">
+                <p>Le jeu du neutron est un jeu de stratégie pour deux joueurs. L'objectif est de déplacer le neutron (N) vers la première ou la dernière ligne du plateau, ou de bloquer l'adversaire pour qu'il ne puisse plus faire de mouvement. Les pièces rouges (R) sont contrôlées par un joueur et les pièces bleues (B) par l'autre joueur. Le neutron peut être déplacé par les deux joueurs pendant leur tour.</p>
+                <h3>Comment jouer :</h3>
+                <ul>
+                    <li>Chaque joueur sélectionne à tour de rôle une de ses pièces ou le neutron en cliquant dessus.</li>
+                    <li>Une fois sélectionnée, le joueur choisit une direction (de 1 à 8) pour déplacer la pièce.</li>
+                    <li>La pièce se déplace dans la direction choisie jusqu'à rencontrer un obstacle ou le bord du plateau.</li>
+                    <li>Le jeu continue jusqu'à ce qu'un joueur atteigne la première ou la dernière ligne avec le neutron ou bloque l'adversaire.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="game">
+            <h2>Interagir avec le programme</h2>
+            <div id="board" class="board"></div>
+            <div class="button-container">
+                <button id="restart-game">Redémarrer le jeu</button>
+            </div>
+            <pre id="output"></pre>
+        </section>
+    </div>
+    <script src="../../assets/js/jeu_de_neutron.js"></script>
+</body>
+</html>

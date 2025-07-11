@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project - Sports Association</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Website Project - Sports Association</h1>
+            <p><a href="../../pages/en/site.eng.html">Back to CV</a></p>
+        </header>
+
+        <section id="project-overview">
+            <h2>Project Overview</h2>
+            <div class="content">
+                <p>Complete development of a web platform for managing a sports association. The project includes
+                    designing a robust relational database and developing an intuitive web interface for comprehensive
+                    management of members, activities, and association events.</p>
+            </div>
+        </section>
+
+        <section id="project-details">
+            <h2>Technical Details</h2>
+            <div class="content">
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                    <li><strong>Backend:</strong> PHP 7.4+</li>
+                    <li><strong>Database:</strong> MySQL / MariaDB</li>
+                    <li><strong>Web Server:</strong> Apache</li>
+                    <li><strong>Tools:</strong> phpMyAdmin for database management</li>
+                </ul>
+
+                <h3>Database Architecture:</h3>
+                <ul>
+                    <li><strong>Members Table:</strong> Personal information, contact details, membership status</li>
+                    <li><strong>Activities Table:</strong> Different sports and activities offered</li>
+                    <li><strong>Registrations Table:</strong> Link between members and activities</li>
+                    <li><strong>Events Table:</strong> Competitions, tournaments, meetings</li>
+                    <li><strong>Payments Table:</strong> Tracking membership fees and registration costs</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section id="database-schema">
+            <h2>Database Schema</h2>
+            <div class="content">
+                <h3>Main Relationships:</h3>
+                <ul>
+                    <li><strong>Members (1,N) ↔ (N,1) Registrations:</strong> A member can register for multiple
+                        activities</li>
+                    <li><strong>Activities (1,N) ↔ (N,1) Registrations:</strong> An activity can have multiple
+                        registered members</li>
+                    <li><strong>Members (1,N) ↔ (N,1) Payments:</strong> Financial transaction tracking</li>
+                    <li><strong>Events (1,N) ↔ (N,1) Participations:</strong> Event registration management</li>
+                </ul>
+
+                <h3>Integrity Constraints:</h3>
+                <ul>
+                    <li>Auto-incremented primary keys</li>
+                    <li>Foreign keys with referential constraints</li>
+                    <li>Format validation (email, phone, dates)</li>
+                    <li>Optimized indexes for frequent searches</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="implementation">
+            <h2>Implementation</h2>
+            <div class="content">
+                <h3>Project Structure:</h3>
+                <ul>
+                    <li><strong>/config/</strong> - Database configuration and settings</li>
+                    <li><strong>/includes/</strong> - Reusable PHP files (header, footer, functions)</li>
+                    <li><strong>/admin/</strong> - Administration interface</li>
+                    <li><strong>/members/</strong> - Member area</li>
+                    <li><strong>/assets/</strong> - CSS, JavaScript, images</li>
+                    <li><strong>/sql/</strong> - Database creation and population scripts</li>
+                </ul>
+
+                <h3>Advanced Features:</h3>
+                <ul>
+                    <li>Advanced search and filtering system</li>
+                    <li>Data export in PDF and Excel formats</li>
+                    <li>Responsive interface adapted for mobile/tablet</li>
+                    <li>Automatic data backup system</li>
+                    <li>Activity logs for audit and security</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+        <section id="live-demo">
+            <h2>Live Demo</h2>
+            <div class="content">
+                <p>You can see the sports association website in action:</p>
+                <p><a href="index.html" target="_blank" class="project-link">🌐 View live website</a></p>
+            </div>
+        </section>
+    </div>
+    <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>
