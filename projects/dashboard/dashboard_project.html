@@ -1,46 +1,94 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Project</title>
+    <title>Dashboard Project | Electric Vehicles</title>
+    <meta name="description" content="Interactive dashboard project for electric vehicle analytics using Plotly and JavaScript.">
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Dashboard Project</h1>
-            <p><a href="../../pages/en/site.eng.html">Back to CV</a></p>
-        </header>
-        <section id="project-details">
-            <h2>Project Details</h2>
-            <div class="content">
-                <p>Development of an interactive dashboard to analyze electric vehicles in the state of Washington. Utilization of modern technologies such as Plotly, Bootstrap, and JavaScript to create dynamic charts. Visualization of data on vehicle distribution by year, market shares of brands, and average vehicle range.</p>
-                <p>You can access the project by clicking on the following link: <a href="HTML-CSS-JS/main_dash.html">View Project</a></p>
-                <p>Download the necessary CSV file to visualize the data by clicking on the link below:</p>
-                <a href="https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD" download>Download CSV File</a>
-                
-                <h3>Technologies Used:</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Plotly.js</li>
-                </ul>
-                
-                <h3>Features:</h3>
-                <ul>
-                    <li>Electric vehicle data analysis</li>
-                    <li>Interactive charts</li>
-                    <li>Responsive interface</li>
-                    <li>Data filtering</li>
-                    <li>Dynamic visualizations</li>
-                </ul>
+    <main class="container">
+        <div class="topbar reveal">
+            <div class="brand-badge">PRJ-04 :: Dashboard EV</div>
+            <div class="topbar-links">
+                <a href="../../pages/en/site.eng.html">Back to CV EN</a>
+                <a href="projet_tableau_de_bord.html">Version FR</a>
+            </div>
+        </div>
+
+        <section class="panel project-hero reveal">
+            <a class="btn btn-secondary back-link" href="../../pages/en/site.eng.html">Back to portfolio</a>
+            <h1>Electric Vehicle Dashboard</h1>
+            <p>Interactive data visualization project built to explore public electric vehicle records from Washington State, with filters, summary indicators and dynamic charts.</p>
+            <div class="meta-list">
+                <span class="meta-item">Role: Data analyst + frontend</span>
+                <span class="meta-item">Stack: Plotly, JavaScript, Bootstrap</span>
+                <span class="meta-item">Dataset: Washington EV open data</span>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <p class="kpi-label">Visualization</p>
+                    <p class="kpi-value">Dynamic multi-chart dashboard</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Analysis</p>
+                    <p class="kpi-value">Distribution, brands, average range</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Usage</p>
+                    <p class="kpi-value">Interactive trend exploration</p>
+                </article>
             </div>
         </section>
-    </div>
+
+        <section class="panel reveal">
+            <div class="section-head">
+                <h2 class="section-title">Technical Content</h2>
+                <p class="section-label">Data storytelling</p>
+            </div>
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <h3>Dashboard focus</h3>
+                    <ul>
+                        <li>Track EV fleet growth over time.</li>
+                        <li>Compare brand market share patterns.</li>
+                        <li>Analyze average range across categories.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Implementation approach</h3>
+                    <ul>
+                        <li>Load and preprocess CSV-based records.</li>
+                        <li>Create visualizations with Plotly.js.</li>
+                        <li>Build filtering logic in JavaScript.</li>
+                        <li>Keep the layout responsive for fast reading.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="link-grid">
+                <article class="link-card">
+                    <h3>Open dashboard</h3>
+                    <p>Complete version with all indicators and charts.</p>
+                    <a class="btn btn-primary" href="HTML-CSS-JS/main_dash.html" target="_blank" rel="noopener noreferrer">Launch dashboard</a>
+                </article>
+
+                <article class="link-card">
+                    <h3>Data source</h3>
+                    <p>Public CSV source used for the visuals.</p>
+                    <a class="btn btn-secondary" href="https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD" target="_blank" rel="noopener noreferrer">Download CSV</a>
+                </article>
+            </div>
+
+            <div class="highlight-box">
+                This project demonstrates my ability to combine data exploration, visual communication and frontend delivery in one coherent analytical interface.
+            </div>
+        </section>
+    </main>
+
     <script src="../../assets/js/scripts.js"></script>
 </body>
 </html>

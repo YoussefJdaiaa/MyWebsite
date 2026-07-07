@@ -1,98 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef Jdaiaa - Portfolio</title>
+    <title>Youssef Jdaiaa</title>
+    <meta name="description" content="Page personnelle de Youssef Jdaiaa, eleve ingenieur ENSIIE et apprenti Data & IA chez Renault Ampere SAS.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/images/generated-icon.png" type="image/png">
-    <meta name="description" content="Portfolio de Youssef Jdaiaa - Développeur créatif spécialisé en Data Science et développement web">
 </head>
-
 <body>
-    <div class="container">
-        <!-- Language Selection Section -->
-        <section class="hero language-selector">
+    <header class="split">
+        <aside>
             <h1>Youssef Jdaiaa</h1>
-            <p class="subtitle">Portfolio - Choisissez votre langue / Choose your language</p>
-
-            <div class="language-buttons">
-                <a href="pages/fr/site.fr.html" class="language-btn french">
-                    <span class="flag">🇫🇷</span>
-                    <span class="text">Français</span>
+            <p><i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i> <code>youssef.jdaiaa@gmail.com</code></p>
+            <p><i class="fa-solid fa-briefcase fa-fw" aria-hidden="true"></i> Apprenti Data &amp; IA chez Renault Ampere SAS</p>
+            <div class="icons" aria-label="Liens externes">
+                <a href="https://github.com/YoussefJdaiaa" title="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
                 </a>
-
-                <a href="pages/en/site.eng.html" class="language-btn english">
-                    <span class="flag">🇬🇧</span>
-                    <span class="text">English</span>
+                <a href="https://www.linkedin.com/in/youssef-jdaiaa-707757324/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="mailto:youssef.jdaiaa@gmail.com" title="Email">
+                    <i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only">Email</span>
                 </a>
             </div>
+        </aside>
+    </header>
+
+    <nav aria-label="Navigation principale">
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#competences">Competences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="pages/fr/site.fr.html">Version francaise</a></li>
+            <li><a href="pages/en/site.eng.html">English</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="profil">Profil</h1>
+        <p>Je suis eleve ingenieur en informatique a l'ENSIIE et apprenti Data &amp; IA chez Renault Ampere SAS. Mon parcours combine analyse de donnees, NLP, visualisation, developpement web et mise en production d'outils d'aide a la decision. Cette page rassemble les informations principales de mon CV, mes competences techniques et une selection de projets academiques et personnels. Je travaille principalement sur des sujets data: collecte et nettoyage de donnees, analyses exploratoires, text mining, tableaux de bord et prototypage d'applications. J'aime les projets ou il faut transformer une source de donnees brute en resultat clair, exploitable et maintenable.</p>
+
+        <h1 id="experience">Experience</h1>
+        <section class="paper">
+            <h3>Apprenti Data &amp; IA - Renault Ampere SAS</h3>
+            <p>2024 - Present</p>
+            <ul>
+                <li>Collecte, traitement et analyse de donnees internes sur Google Cloud Platform et de donnees externes via web scraping.</li>
+                <li>Construction d'analyses et de tableaux de bord interactifs pour soutenir la prise de decision.</li>
+                <li>Developpement d'un projet NLP pour extraire automatiquement des themes depuis des donnees textuelles.</li>
+            </ul>
         </section>
-    </div>
 
-    <style>
-        .language-selector {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+        <h1 id="formation">Formation</h1>
+        <ul>
+            <li><strong>2024 - 2027:</strong> Cycle ingenieur en informatique, ENSIIE.</li>
+            <li><strong>2021 - 2023:</strong> Classes preparatoires PCSI / PSI, Lycee Jacques Amyot.</li>
+        </ul>
 
-        .language-buttons {
-            display: flex;
-            gap: 30px;
-            margin-top: 40px;
-        }
+        <h1 id="competences">Competences</h1>
+        <div class="skills-grid">
+            <section class="skill-card">
+                <h3>Langages</h3>
+                <p>Python, R, SQL, C/C++, Java, PHP, JavaScript, TypeScript.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Data &amp; IA</h3>
+                <p>Pandas, NumPy, Scikit-learn, PyTorch, Transformers, NLP, BeautifulSoup.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Cloud et BI</h3>
+                <p>Google Cloud Platform, BigQuery, Looker, Spotfire, Qlik Sense.</p>
+            </section>
+        </div>
 
-        .language-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 30px 40px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid var(--primary-color);
-            border-radius: 15px;
-            text-decoration: none;
-            color: #fff;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
+        <h1 id="projets">Projets</h1>
+        <section class="paper">
+            <h3><a href="https://github.com/YoussefJdaiaa/FedCompress" target="_blank" rel="noopener noreferrer">FedCompress</a></h3>
+            <p>Projet Jupyter Notebook sur l'impact de la compression des communications en apprentissage federe.</p>
+        </section>
+        <section class="paper">
+            <h3><a href="https://github.com/YoussefJdaiaa/house" target="_blank" rel="noopener noreferrer">house</a></h3>
+            <p>Projet d'analyse de donnees immobilieres, avec exploration et travail autour des variables influencant les prix.</p>
+        </section>
+        <section class="paper">
+            <h3><a href="projects/neutron-game/projet_jeu_du_neutron.html">Jeu du Neutron</a></h3>
+            <p>Implementation d'un jeu strategique avec logique de deplacement, validation des coups et demonstration web interactive.</p>
+        </section>
+        <section class="paper">
+            <h3><a href="projects/internet/internet_project.html">Projet Internet: jeu de mots</a></h3>
+            <p>Interface web responsive et logique JavaScript autour d'un jeu de mots croises.</p>
+        </section>
+    </main>
 
-        .language-btn:hover {
-            background: var(--primary-color);
-            color: #121212;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
+    <footer>
+        <p>Derniere mise a jour: juillet 2026. Versions disponibles: <a href="pages/fr/site.fr.html">francais</a> et <a href="pages/en/site.eng.html">anglais</a>.</p>
+    </footer>
 
-        .language-btn .flag {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        .language-btn .text {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .language-buttons {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .language-btn {
-                padding: 25px 35px;
-            }
-
-            .language-btn .flag {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    <script src="assets/js/scripts.js"></script>
 </body>
-
 </html>

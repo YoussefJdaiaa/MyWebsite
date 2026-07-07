@@ -1,30 +1,97 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery Planning Project</title>
+    <title>Delivery Planning | Optimization Project</title>
+    <meta name="description" content="Delivery planning optimization project in C using route-first/cluster-second strategy.">
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Delivery Planning Project</h1>
-            <p><a href="../../pages/en/site.eng.html">Back to CV</a></p>
-        </header>
-        <section id="project-details">
-            <h2>Project Details</h2>
-            <div class="content">
-                <p>Developed a delivery planning algorithm in C. Used the route-first/cluster-second method to minimize
-                    total vehicle travel distance. Created a giant tour, constructed an auxiliary graph (SPLIT
-                    procedure), and applied a shortest path algorithm to the graph.</p>
-                <!-- Add report and details here -->
+    <main class="container">
+        <div class="topbar reveal">
+            <div class="brand-badge">PRJ-05 :: Delivery Planning</div>
+            <div class="topbar-links">
+                <a href="../../pages/en/site.eng.html">Back to CV EN</a>
+                <a href="../../pages/fr/site.fr.html">Retour CV FR</a>
+            </div>
+        </div>
+
+        <section class="panel project-hero reveal">
+            <a class="btn btn-secondary back-link" href="../../pages/en/site.eng.html">Back to portfolio</a>
+            <h1>Delivery Planning Optimization</h1>
+            <p>C-based algorithmic project for vehicle route optimization. The implementation follows a route-first/cluster-second logic to produce efficient tours and reduce total travel cost.</p>
+            <div class="meta-list">
+                <span class="meta-item">Role: Algorithm implementation</span>
+                <span class="meta-item">Domain: Logistics optimization</span>
+                <span class="meta-item">Language: C</span>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <p class="kpi-label">Method</p>
+                    <p class="kpi-value">Route-first / Cluster-second</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Core artifact</p>
+                    <p class="kpi-value">SPLIT auxiliary graph</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Goal</p>
+                    <p class="kpi-value">Minimize total travel distance</p>
+                </article>
             </div>
         </section>
-    </div>
+
+        <section class="panel reveal">
+            <div class="section-head">
+                <h2 class="section-title">Algorithm Structure</h2>
+                <p class="section-label">Optimization flow</p>
+            </div>
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <h3>Step 1: Giant tour</h3>
+                    <ul>
+                        <li>Build an initial global route over all delivery nodes.</li>
+                        <li>Represent feasible visit ordering before clustering.</li>
+                        <li>Create a deterministic base for route splitting.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Step 2: SPLIT graph</h3>
+                    <ul>
+                        <li>Construct an auxiliary directed graph of candidate segments.</li>
+                        <li>Attach segment costs to encode vehicle constraints.</li>
+                        <li>Translate routing decisions into path optimization.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Step 3: Shortest path</h3>
+                    <ul>
+                        <li>Run a shortest path procedure on SPLIT graph.</li>
+                        <li>Recover clustered tours from selected optimal arcs.</li>
+                        <li>Output final route set with lower operational cost.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Engineering value</h3>
+                    <ul>
+                        <li>Bridges graph theory and operational constraints.</li>
+                        <li>Shows strong algorithm-to-code translation skills.</li>
+                        <li>Applicable to real logistics planning scenarios.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="highlight-box">
+                This project is a solid proof of algorithmic reasoning under constraints, with direct relevance for route optimization and operations research use cases.
+            </div>
+        </section>
+    </main>
+
     <script src="../../assets/js/scripts.js"></script>
 </body>
-
 </html>

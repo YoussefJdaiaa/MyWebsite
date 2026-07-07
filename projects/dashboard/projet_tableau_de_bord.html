@@ -1,45 +1,94 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Tableau de Bord</title>
+    <title>Projet Dashboard | Vehicules Electriques</title>
+    <meta name="description" content="Projet de dashboard interactif pour analyser les donnees de vehicules electriques.">
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Projet Tableau de Bord</h1>
-            <p><a href="../../index.html">Retour au CV</a></p>
-        </header>
-        <section id="project-details">
-            <h2>Détails du Projet</h2>
-            <div class="content">
-                <p>Développement d'un tableau de bord interactif pour analyser les véhicules électriques dans l'état de Washington. Utilisation de technologies modernes telles que Plotly, Bootstrap et JavaScript pour créer des graphiques dynamiques. Visualisation des données sur la répartition des véhicules par année, les parts de marché des marques et l'autonomie moyenne des véhicules.</p>
-                <p>Vous pouvez accéder au projet en cliquant sur le lien suivant : <a href="HTML-CSS-JS/main_dash.html">Voir le projet</a></p>
-                <p>Téléchargez le fichier CSV nécessaire pour visualiser les données en cliquant sur le lien ci-dessous :</p>
-                <a href="https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD" download>Télécharger le fichier CSV</a>
+    <main class="container">
+        <div class="topbar reveal">
+            <div class="brand-badge">PRJ-04 :: Dashboard EV</div>
+            <div class="topbar-links">
+                <a href="../../pages/fr/site.fr.html">Retour CV FR</a>
+                <a href="dashboard_project.html">Version EN</a>
+            </div>
+        </div>
 
-                <h3>Technologies utilisées :</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                    <li>Plotly.js</li>
-                </ul>
+        <section class="panel project-hero reveal">
+            <a class="btn btn-secondary back-link" href="../../pages/fr/site.fr.html">Retour au portfolio</a>
+            <h1>Tableau de Bord Vehicules Electriques</h1>
+            <p>Projet de data visualisation interactif construit pour analyser des donnees publiques sur les vehicules electriques dans l'Etat de Washington, avec filtres, indicateurs et graphiques dynamiques.</p>
+            <div class="meta-list">
+                <span class="meta-item">Role: Data analyst + frontend</span>
+                <span class="meta-item">Stack: Plotly, JavaScript, Bootstrap</span>
+                <span class="meta-item">Dataset: open data Washington EV</span>
+            </div>
 
-                <h3>Fonctionnalités :</h3>
-                <ul>
-                    <li>Analyse des données de véhicules électriques</li>
-                    <li>Graphiques interactifs</li>
-                    <li>Interface responsive</li>
-                    <li>Filtrage des données</li>
-                    <li>Visualisations dynamiques</li>
-                </ul>
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <p class="kpi-label">Visualisation</p>
+                    <p class="kpi-value">Graphiques dynamiques multi-vues</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Analyse</p>
+                    <p class="kpi-value">Distribution, marques, autonomie</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Usage</p>
+                    <p class="kpi-value">Exploration interactive des tendances</p>
+                </article>
             </div>
         </section>
-    </div>
+
+        <section class="panel reveal">
+            <div class="section-head">
+                <h2 class="section-title">Contenu Technique</h2>
+                <p class="section-label">Data storytelling</p>
+            </div>
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <h3>Ce que montre le dashboard</h3>
+                    <ul>
+                        <li>Evolution du parc de vehicules electriques dans le temps.</li>
+                        <li>Part de marche des constructeurs.</li>
+                        <li>Comparaison des autonomies moyennes selon segments.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Approche implementation</h3>
+                    <ul>
+                        <li>Chargement et preparation des donnees depuis CSV.</li>
+                        <li>Generation de graphiques avec Plotly.js.</li>
+                        <li>Construction d'une interface filtree en JavaScript.</li>
+                        <li>Mise en page responsive pour consultation rapide.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="link-grid">
+                <article class="link-card">
+                    <h3>Acces au dashboard</h3>
+                    <p>Version complete avec visualisations et indicateurs.</p>
+                    <a class="btn btn-primary" href="HTML-CSS-JS/main_dash.html" target="_blank" rel="noopener noreferrer">Ouvrir le dashboard</a>
+                </article>
+
+                <article class="link-card">
+                    <h3>Source de donnees</h3>
+                    <p>Dataset CSV public utilise pour les analyses.</p>
+                    <a class="btn btn-secondary" href="https://data.wa.gov/api/views/f6w7-q2d2/rows.csv?accessType=DOWNLOAD" target="_blank" rel="noopener noreferrer">Telecharger le CSV</a>
+                </article>
+            </div>
+
+            <div class="highlight-box">
+                Projet pertinent pour montrer ma capacite a connecter exploration de donnees, visualisation et interface utilisateur exploitable.
+            </div>
+        </section>
+    </main>
+
     <script src="../../assets/js/scripts.js"></script>
 </body>
 </html>

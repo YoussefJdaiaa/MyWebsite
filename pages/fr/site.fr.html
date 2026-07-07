@@ -1,160 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Youssef Jdaiaa</title>
+    <title>Youssef Jdaiaa | CV Francais</title>
+    <meta name="description" content="CV francais de Youssef Jdaiaa, eleve ingenieur ENSIIE en alternance Data et IA chez Renault Ampere SAS.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
+    <header class="split">
+        <aside>
             <h1>Youssef Jdaiaa</h1>
-            <p>Lille | +33752075114 | <a href="mailto:youssef.jdaiaa@gmail.com">youssef.jdaiaa@gmail.com</a> | <a
-                    href="https://www.linkedin.com/in/youssef-jdaiaa-707757324/">LinkedIn</a></p>
-            <button id="switchLanguage">Switch to English</button>
-        </header>
-
-        <section id="profile">
-            <h2>Profil</h2>
-            <div class="content">
-                <p>Passionné par l'analyse de données et les mathématiques, je mets mes compétences
-                    techniques et analytiques au service de projets innovants.
-                    Je recherche une alternance dans le domaine de le développement informatique et de l’IA à
-                    partir de septembre pour une durée de 1 an pour ma 4-ème année d’ingénieur à l’ensIIE avec
-                    un rythme d’alternance de 2 jours école et 3 jours entreprise.</p>
+            <p><i class="fa-solid fa-phone fa-fw" aria-hidden="true"></i> 07 52 07 51 14</p>
+            <p><i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i> <code>youssef.jdaiaa@gmail.com</code></p>
+            <div class="icons" aria-label="Liens externes">
+                <a href="https://github.com/YoussefJdaiaa" title="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/youssef-jdaiaa-707757324/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="mailto:youssef.jdaiaa@gmail.com" title="Email">
+                    <i class="fa-regular fa-envelope fa-fw" aria-hidden="true"></i>
+                    <span class="sr-only">Email</span>
+                </a>
             </div>
+        </aside>
+    </header>
+
+    <nav aria-label="Navigation du CV">
+        <ul>
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#competences">Competences</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#langues">Langues</a></li>
+            <li><a href="../en/site.eng.html">English</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="profil">Profil</h1>
+        <p>Eleve ingenieur en informatique a l'ENSIIE, je suis actuellement apprenti Data &amp; IA chez Renault Ampere SAS. Mon profil relie developpement logiciel, analyse de donnees, NLP, visualisation et cloud. Je m'interesse aux systemes data de bout en bout: collecte, preparation, exploration, modelisation, restitution et industrialisation progressive. Mes experiences recentes portent sur Google Cloud Platform, le web scraping, les tableaux de bord interactifs et l'extraction automatique de themes dans des corpus textuels. Je recherche une alternance ou je pourrai contribuer a des sujets concrets en data science, machine learning, NLP ou IA appliquee.</p>
+
+        <h1 id="experience">Experience professionnelle</h1>
+        <section class="paper">
+            <h3>Apprenti Data &amp; IA - Renault Ampere SAS</h3>
+            <p>2024 - Present</p>
+            <ul>
+                <li>Collecte, traitement et analyse de donnees issues de bases internes sur Google Cloud Platform et de sources externes via web scraping.</li>
+                <li>Realisation d'analyses et de tableaux de bord interactifs pour soutenir la prise de decision.</li>
+                <li>Developpement d'un projet NLP pour l'extraction automatique de themes: pretraitement, nettoyage, structuration de corpus, analyse semantique, text mining et identification de thematiques recurrentes.</li>
+            </ul>
         </section>
 
-        <section id="experience">
-            <h2>Expérience Professionnelle</h2>
-            <div class="content">
-                <div class="education-item">
-                    <h3>Alternance Data Scientist</h3>
-                    <p>Renault, Lille</p>
-                    <p>2024 - 2025</p>
-                    <ul>
-                        <li>Contribué à des projets pilotés par l'IA au sein de la Data Factory, en concevant des solutions innovantes sur Google Cloud Platform (GCP) selon la méthodologie Scrum afin de générer une réelle valeur business.</li>
-                        <li>Développé des modèles de Machine Learning pour optimiser les campagnes marketing, améliorant le ciblage client et les performances globales des campagnes.</li>
-                        <li>Exploré, analysé et enrichi des jeux de données internes et externes afin d'en extraire des insights exploitables pour orienter la prise de décisions stratégiques.</li>
-                        <li>Déployé des algorithmes en production en appliquant les bonnes pratiques du MLOps, garantissant robustesse, scalabilité et performance en environnement réel.</li>
-                    </ul>
-                </div>
-            </div>
+        <h1 id="competences">Competences</h1>
+        <div class="skills-grid">
+            <section class="skill-card">
+                <h3>Langages</h3>
+                <p>Python, R, SQL, C/C++, Java, PHP, JavaScript, TypeScript.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Data / IA</h3>
+                <p>Pandas, NumPy, Scikit-learn, PyTorch, Transformers, NLP, BeautifulSoup.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Bases de donnees</h3>
+                <p>MongoDB, BigQuery, modelisation relationnelle, requetes SQL.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Cloud / BI</h3>
+                <p>Google Cloud Platform, Looker, Spotfire, Qlik Sense.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Web</h3>
+                <p>HTML, CSS, JavaScript, TypeScript, Vue 3, PHP.</p>
+            </section>
+            <section class="skill-card">
+                <h3>Outils</h3>
+                <p>Git, Docker, Linux, environnements data et notebooks.</p>
+            </section>
+        </div>
+
+        <h1 id="formation">Formation</h1>
+        <ul>
+            <li><strong>2024 - 2027:</strong> ENSIIE, cycle ingenieur en informatique. Formation generaliste en data science, intelligence artificielle, developpement logiciel, bases de donnees, algorithmique et optimisation.</li>
+            <li><strong>2021 - 2023:</strong> Classes preparatoires PCSI / PSI, Lycee Jacques Amyot. Formation intensive en mathematiques, physique et sciences de l'ingenieur.</li>
+        </ul>
+
+        <h1 id="projets">Projets</h1>
+        <section class="paper">
+            <h3>Reparo</h3>
+            <p>IMT Startup Challenge</p>
+            <p>Concept d'application mettant en relation des clients avec des artisans qualifies. Travail sur la proposition de valeur, le fonctionnement de la plateforme et la presentation du projet.</p>
         </section>
-
-        <section id="skills">
-            <h2>Compétences</h2>
-            <div class="content">
-                <h3>Langages de programmation</h3>
-                <ul>
-                    <li>C | C++ | JavaScript | PHP | Python</li>
-                </ul>
-                <h3>Bases de données</h3>
-                <ul>
-                    <li>BigQuery | PostgreSQL | Oracle | SQL</li>
-                </ul>
-                <h3>Cloud & DevOps</h3>
-                <ul>
-                    <li>Google Cloud Platform (GCP)</li>
-                    <li>Git | GitHub</li>
-                </ul>
-                <h3>Concepts & Algorithmes</h3>
-                <ul>
-                    <li>Data Structure & Algorithms</li>
-                    <li>Graph Theory</li>
-                </ul>
-                <h3>Outils d'analyse & Visualisation</h3>
-                <ul>
-                    <li>Looker | Power BI | Spotfire</li>
-                    <li>RStudio | SAS</li>
-                    <li>Excel</li>
-                </ul>
-                <h3>Frameworks (débutant)</h3>
-                <ul>
-                    <li>Angular | Symfony</li>
-                </ul>
-            </div>
+        <section class="paper">
+            <h3><a href="https://github.com/YoussefJdaiaa/FedCompress" target="_blank" rel="noopener noreferrer">FedCompress</a></h3>
+            <p>Jupyter Notebook</p>
+            <p>Projet sur l'impact de la compression des communications en apprentissage federe.</p>
         </section>
-
-        <section id="languages">
-            <h2>Langues</h2>
-            <div class="content">
-                <ul>
-                    <li>Anglais</li>
-                    <li>Arabe</li>
-                    <li>Allemand</li>
-                </ul>
-            </div>
+        <section class="paper">
+            <h3><a href="https://github.com/YoussefJdaiaa/house" target="_blank" rel="noopener noreferrer">House</a></h3>
+            <p>Analyse de donnees en R</p>
+            <p>Analyse exploratoire d'une base immobiliere: nettoyage, etude des variables explicatives et visualisation des caracteristiques influencant les prix.</p>
         </section>
-
-        <section id="interests">
-            <h2>Centres d'Intérêt</h2>
-            <div class="content">
-                <ul>
-                    <li>Musculation (3 fois/semaine)</li>
-                    <li>Tennis (2 fois/semaine)</li>
-                </ul>
-            </div>
+        <section class="paper">
+            <h3>PlanWatch</h3>
+            <p>Application web - TypeScript / Vue 3</p>
+            <p>Web-app de coaching pour l'estimation et la tracabilite des taches, avec interface de suivi et aide a l'organisation.</p>
         </section>
+        <h1 id="langues">Langues</h1>
+        <ul>
+            <li>Francais: bilingue.</li>
+            <li>Anglais: bilingue, EnglishScore C1.</li>
+            <li>Arabe: natif.</li>
+            <li>Allemand: debutant.</li>
+        </ul>
 
-        <section id="education">
-            <h2>Formation</h2>
-            <div class="content">
-                <h3>Cycle ingénieur en informatique et statistiques</h3>
-                <p>Polytech Lille, Lille</p>
-                <p>sept. 2023 - sept. 2027</p>
+        <h1 id="interets">Centres d'interet</h1>
+        <p>Tennis, musculation, athletisme.</p>
+    </main>
 
-                <h3>Classes préparatoires PSCI/PSI</h3>
-                <p>Lycée Jacques Amyot, Auxerre</p>
-                <p>sept. 2021 - juin 2023</p>
-
-                <h3>Baccalauréat Sciences Expérimentales</h3>
-                <p>Etablissement Elaraki 2, Marrakech</p>
-                <p>sept. 2018 - juin 2021</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Réalisations</h2>
-            <div class="content">
-                <div class="project-item">
-                    <h3><a href="../../projects/website/website_project.html">Projet Site Web</a></h3>
-                    <p>Création d'une base de données SQL pour une association sportive. Connexion de la base de données
-                        à un site web en utilisant HTML et PHP.</p>
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="../../projects/neutron-game/projet_jeu_du_neutron.html">Jeu du Neutron</a></h3>
-                    <p>Développement d'un programme pour le jeu du neutron. Création d'une plateforme interactive dans
-                        le terminal. Application des concepts de modélisation de jeux en C.</p>
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="../../projects/internet/internet_project.html">Projet Internet</a></h3>
-                    <p>Conception et développement d'une page web pour un jeu de mots croisés. Utilisation de HTML, CSS,
-                        JavaScript et Bootstrap.</p>
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="../../projects/delivery-planning/delivery_planning_project.html">Planification de
-                            Livraisons</a></h3>
-                    <p>Développement d'un algorithme de planification de livraisons en C. Utilisation de la méthode
-                        route-first/cluster-second pour optimiser les trajets.</p>
-                </div>
-
-                <div class="project-item">
-                    <h3><a href="../../projects/dashboard/HTML-CSS-JS/main_dash.html">Tableau de Bord</a></h3>
-                    <p>Développement d'un tableau de bord interactif pour analyser les véhicules électriques.
-                        Utilisation de Plotly, Bootstrap et JavaScript.</p>
-                </div>
-            </div>
-        </section>
-    </div>
+    <footer>
+        <p><span class="lastupdate">Derniere mise a jour: juillet 2026.</span></p>
+    </footer>
 
     <script src="../../assets/js/scripts.js"></script>
 </body>
-
 </html>

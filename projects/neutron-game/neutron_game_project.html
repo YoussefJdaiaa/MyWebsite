@@ -1,45 +1,93 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neutron Game Project</title>
+    <title>Neutron Game | Strategy Project</title>
+    <meta name="description" content="Algorithmic neutron game project with an interactive board and move validation logic.">
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <main class="container">
+        <div class="topbar reveal">
+            <div class="brand-badge">PRJ-02 :: Neutron Game</div>
+            <div class="topbar-links">
+                <a href="../../pages/en/site.eng.html">Back to CV EN</a>
+                <a href="projet_jeu_du_neutron.html">Version FR</a>
+            </div>
+        </div>
+
+        <section class="panel project-hero reveal">
+            <a class="btn btn-secondary back-link" href="../../pages/en/site.eng.html">Back to portfolio</a>
             <h1>Neutron Game Project</h1>
-            <p><a href="../../pages/en/site.eng.html">Back to CV</a></p>
-        </header>
-        <section id="project-details">
-            <h2>Project Details</h2>
-            <div class="content">
-                <p>Development of a program for the neutron game. Creation of an interactive platform. Application of game modeling concepts in C.</p>
+            <p>Strategy game implementation based on C game-modeling logic, then adapted into an interactive web experience. The project focuses on rule consistency, move validation and win-state control.</p>
+            <div class="meta-list">
+                <span class="meta-item">Role: Algorithm design + integration</span>
+                <span class="meta-item">Core language: C</span>
+                <span class="meta-item">UI layer: JavaScript + HTML</span>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <p class="kpi-label">Game type</p>
+                    <p class="kpi-value">Two-player strategy</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Main objective</p>
+                    <p class="kpi-value">Move neutron to first or last row</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Key skill</p>
+                    <p class="kpi-value">Formal rule modeling</p>
+                </article>
             </div>
         </section>
-        <section id="instructions">
-            <h2>Game Instructions</h2>
-            <div class="content">
-                <p>The neutron game is a strategy game for two players. The goal is to move the neutron (N) to the first or last row of the board, or to block the opponent so they can no longer make a move. The red pieces (R) are controlled by one player and the blue pieces (B) by the other player. The neutron can be moved by both players during their turn.</p>
-                <h3>How to play:</h3>
-                <ul>
-                    <li>Each player takes turns selecting one of their pieces or the neutron by clicking on it.</li>
-                    <li>Once selected, the player chooses a direction (from 1 to 8) to move the piece.</li>
-                    <li>The piece moves in the chosen direction until it encounters an obstacle or the edge of the board.</li>
-                    <li>The game continues until a player reaches the first or last row with the neutron or blocks the opponent.</li>
-                </ul>
+
+        <section class="panel reveal">
+            <div class="section-head">
+                <h2 class="section-title">Rules and Logic</h2>
+                <p class="section-label">Gameplay</p>
+            </div>
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <h3>Winning conditions</h3>
+                    <ul>
+                        <li>Move the neutron to the top or bottom row.</li>
+                        <li>Block the opponent from any legal move.</li>
+                        <li>Alternate turns between red and blue pieces.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Technical aspects</h3>
+                    <ul>
+                        <li>8-direction move validation per selected piece.</li>
+                        <li>Auto-stop behavior at board edge or obstacle.</li>
+                        <li>Full board state update after each turn.</li>
+                        <li>Real-time status feedback in output console.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="highlight-box">
+                This project demonstrates my ability to convert abstract strategic rules into deterministic, testable software behavior.
             </div>
         </section>
-        <section id="game">
-            <h2>Interact with the Program</h2>
+
+        <section class="panel reveal" id="game">
+            <div class="section-head">
+                <h2 class="section-title">Interactive Board</h2>
+                <p class="section-label">Play</p>
+            </div>
             <div id="board" class="board"></div>
             <div class="button-container">
-                <button id="restart-game">Restart Game</button>
+                <button id="restart-game" type="button">Restart game</button>
             </div>
             <pre id="output"></pre>
         </section>
-    </div>
+    </main>
+
+    <script src="../../assets/js/scripts.js"></script>
     <script src="../../assets/js/jeu_de_neutron.js"></script>
 </body>
 </html>

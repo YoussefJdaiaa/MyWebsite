@@ -1,115 +1,114 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Site Web - Association Sportive</title>
+    <title>Projet Web | Association Sportive</title>
+    <meta name="description" content="Projet de plateforme web et base de donnees pour la gestion d'une association sportive.">
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Projet Site Web - Association Sportive</h1>
-            <p><a href="../../pages/fr/site.fr.html">Retour au CV</a></p>
-        </header>
+    <main class="container">
+        <div class="topbar reveal">
+            <div class="brand-badge">PRJ-01 :: Website Platform</div>
+            <div class="topbar-links">
+                <a href="../../pages/fr/site.fr.html">Retour CV FR</a>
+                <a href="website_project_en.html">Version EN</a>
+            </div>
+        </div>
 
-        <section id="project-overview">
-            <h2>Vue d'ensemble du Projet</h2>
-            <div class="content">
-                <p>Développement complet d'une plateforme web pour la gestion d'une association sportive. Le projet
-                    comprend la conception d'une base de données relationnelle robuste et le développement d'une
-                    interface web intuitive permettant la gestion complète des membres, des activités et des événements
-                    de l'association.</p>
+        <section class="panel project-hero reveal">
+            <a class="btn btn-secondary back-link" href="../../pages/fr/site.fr.html">Retour au portfolio</a>
+            <h1>Plateforme Web pour Association Sportive</h1>
+            <p>Projet complet de conception d'une application web connectee a une base relationnelle pour gerer membres, activites, inscriptions et administration interne.</p>
+            <div class="meta-list">
+                <span class="meta-item">Role: Full-stack et schema SQL</span>
+                <span class="meta-item">Perimetre: CRUD + structure BDD</span>
+                <span class="meta-item">Contexte: Projet academique</span>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <p class="kpi-label">Backend</p>
+                    <p class="kpi-value">PHP 7.4+</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Database</p>
+                    <p class="kpi-value">MySQL / MariaDB</p>
+                </article>
+                <article class="kpi-card">
+                    <p class="kpi-label">Frontend</p>
+                    <p class="kpi-value">HTML, CSS, JavaScript</p>
+                </article>
             </div>
         </section>
 
-        <section id="project-details">
-            <h2>Détails Techniques</h2>
-            <div class="content">
-                <h3>Technologies utilisées :</h3>
-                <ul>
-                    <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript</li>
-                    <li><strong>Backend :</strong> PHP 7.4+</li>
-                    <li><strong>Base de données :</strong> MySQL / MariaDB</li>
-                    <li><strong>Serveur web :</strong> Apache</li>
-                    <li><strong>Outils :</strong> phpMyAdmin pour la gestion de la base de données</li>
-                </ul>
+        <section class="panel reveal">
+            <div class="section-head">
+                <h2 class="section-title">Architecture Technique</h2>
+                <p class="section-label">Data + Web</p>
+            </div>
+            <div class="detail-grid">
+                <article class="detail-card">
+                    <h3>Schema relationnel</h3>
+                    <ul>
+                        <li>Table membres avec informations personnelles et statut.</li>
+                        <li>Table activites pour les disciplines proposees.</li>
+                        <li>Table inscriptions pour relier membres et activites.</li>
+                        <li>Table paiements pour le suivi administratif.</li>
+                    </ul>
+                </article>
 
-                <h3>Architecture de la base de données :</h3>
-                <ul>
-                    <li><strong>Table Membres :</strong> Informations personnelles, coordonnées, statut d'adhésion</li>
-                    <li><strong>Table Activités :</strong> Différents sports et activités proposés</li>
-                    <li><strong>Table Inscriptions :</strong> Liaison entre membres et activités</li>
-                    <li><strong>Table Événements :</strong> Compétitions, tournois, réunions</li>
-                    <li><strong>Table Paiements :</strong> Suivi des cotisations et frais d'inscription</li>
-                </ul>
+                <article class="detail-card">
+                    <h3>Contraintes et robustesse</h3>
+                    <ul>
+                        <li>Cles primaires auto-incrementees et integrite referentielle.</li>
+                        <li>Validation des champs sensibles (email, dates, telephone).</li>
+                        <li>Indexation sur les colonnes de recherche recurrentes.</li>
+                        <li>Structure preparee pour evolution fonctionnelle.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Organisation du code</h3>
+                    <ul>
+                        <li><code>config/</code> pour les connexions et parametrage.</li>
+                        <li><code>includes/</code> pour les composants mutualises.</li>
+                        <li><code>admin/</code> pour l'espace de pilotage interne.</li>
+                        <li><code>sql/</code> pour l'initialisation de la base.</li>
+                    </ul>
+                </article>
+
+                <article class="detail-card">
+                    <h3>Valeur du projet</h3>
+                    <ul>
+                        <li>Vision de bout en bout, du schema aux ecrans utilisateurs.</li>
+                        <li>Mise en pratique du modele relationnel dans un vrai cas.</li>
+                        <li>Capacite a connecter front, back et base de donnees.</li>
+                        <li>Approche structuree orientee maintainabilite.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="link-grid">
+                <article class="link-card">
+                    <h3>Demonstration</h3>
+                    <p>Version statique de la plateforme pour visualiser l'interface.</p>
+                    <a class="btn btn-primary" href="index.html" target="_blank" rel="noopener noreferrer">Ouvrir la demo</a>
+                </article>
+                <article class="link-card">
+                    <h3>Version PHP</h3>
+                    <p>Point d'entree de la version dynamique connectee a la base.</p>
+                    <a class="btn btn-secondary" href="index.php" target="_blank" rel="noopener noreferrer">Voir l'entree PHP</a>
+                </article>
+            </div>
+
+            <div class="highlight-box">
+                Projet cle pour montrer ma capacite a concevoir une architecture SQL propre puis a l'exploiter dans une interface web operationnelle.
             </div>
         </section>
+    </main>
 
-
-
-        <section id="database-schema">
-            <h2>Schéma de Base de Données</h2>
-            <div class="content">
-                <h3>Principales Relations :</h3>
-                <ul>
-                    <li><strong>Membres (1,N) ↔ (N,1) Inscriptions :</strong> Un membre peut s'inscrire à plusieurs
-                        activités</li>
-                    <li><strong>Activités (1,N) ↔ (N,1) Inscriptions :</strong> Une activité peut avoir plusieurs
-                        membres inscrits</li>
-                    <li><strong>Membres (1,N) ↔ (N,1) Paiements :</strong> Suivi des transactions financières</li>
-                    <li><strong>Événements (1,N) ↔ (N,1) Participations :</strong> Gestion des inscriptions aux
-                        événements</li>
-                </ul>
-
-                <h3>Contraintes d'Intégrité :</h3>
-                <ul>
-                    <li>Clés primaires auto-incrémentées</li>
-                    <li>Clés étrangères avec contraintes référentielles</li>
-                    <li>Validation des formats (email, téléphone, dates)</li>
-                    <li>Index optimisés pour les recherches fréquentes</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="implementation">
-            <h2>Implémentation</h2>
-            <div class="content">
-                <h3>Structure du Projet :</h3>
-                <ul>
-                    <li><strong>/config/</strong> - Configuration de la base de données et paramètres</li>
-                    <li><strong>/includes/</strong> - Fichiers PHP réutilisables (header, footer, fonctions)</li>
-                    <li><strong>/admin/</strong> - Interface d'administration</li>
-                    <li><strong>/members/</strong> - Espace membre</li>
-                    <li><strong>/assets/</strong> - CSS, JavaScript, images</li>
-                    <li><strong>/sql/</strong> - Scripts de création et peuplement de la base</li>
-                </ul>
-
-                <h3>Fonctionnalités Avancées :</h3>
-                <ul>
-                    <li>Système de recherche et filtrage avancé</li>
-                    <li>Export des données en PDF et Excel</li>
-                    <li>Interface responsive adaptée mobile/tablette</li>
-                    <li>Système de backup automatique des données</li>
-                    <li>Logs d'activité pour audit et sécurité</li>
-                </ul>
-            </div>
-        </section>
-
-
-
-
-        <section id="live-demo">
-            <h2>Démonstration en direct</h2>
-            <div class="content">
-                <p>Vous pouvez voir le site web de l'association sportive en action :</p>
-                <p><a href="index.html" target="_blank" class="project-link">🌐 Voir le site web en direct</a></p>
-            </div>
-        </section>
-    </div>
     <script src="../../assets/js/scripts.js"></script>
 </body>
-
 </html>
